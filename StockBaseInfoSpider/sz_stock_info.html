@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+    <title>
+     深圳证券交易所
+    </title>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <div class="main">
+   <!--header-->
+   <link href="/main/template/284/images/global.css" rel="stylesheet" type="text/css">
+    <link href="/szseWeb/common/css/table_main.css" rel="stylesheet" type="text/css">
+     <style>
+      body{ font-size: 12px;}
+     </style>
+     <div class="header">
+      <div class="minNav">
+       <a class="en" href="/main/en/">
+        English
+       </a>
+       <a href="/main/mainboard">
+        深市主板
+       </a>
+       <a href="http://sme.szse.cn">
+        中小企业板
+       </a>
+       <a href="http://chinext.szse.cn">
+        创业板
+       </a>
+       <a href="http://lefu.szse.cn">
+        乐富基金
+       </a>
+       <a href="/main/ints/">
+        综合协议交易平台|固定收益信息平台
+       </a>
+       <a href="http://www.homeforsmes.com.cn/">
+        中小企业之家
+       </a>
+      </div>
+      <div class="nav" id="navRootId">
+       <!--Nav超级链接不能进行格式化排版，会造成Navigator有空隙-->
+       <a href="/" id="www.szse.cn">
+        首页
+       </a>
+       <a href="/main/disclosure/" id="disclosure">
+        信息披露
+       </a>
+       <a class="ind" href="/main/marketdata/" id="marketdata">
+        市场数据
+       </a>
+       <a href="/main/rule/" id="rule">
+        法律/规则
+       </a>
+       <a href="http://investor.szse.cn/" id="investor">
+        投资者教育
+       </a>
+       <a href="/main/research/" id="research">
+        研究/刊物
+       </a>
+       <a href="/main/aboutus/" id="aboutus">
+        关于本所
+       </a>
+      </div>
+     </div>
+     <script src="/common/script/default.js" type="text/javascript">
+     </script>
+     <script type="text/javascript">
+      /*
+	function mouseOver(id){
+		var arrays = ['www.szse.cn','disclosure','marketdata','rule','investor','research','aboutus'];
+		for(var i=0;i<arrays.length;i++){
+			if(id==arrays[i]){
+				document.getElementById(id).className="ind";
+			}
+		}
+	}
+	
+	function mouseOut(id){
+		var linkUrl = GetPageName(window.location.href);
+		if(linkUrl.indexOf(id)>-1 && id != "www.szse.cn"){
+			document.getElementById(id).className="ind";
+		}else{
+			document.getElementById(id).className="";
+		}
+	}
+*/
+     </script>
+     <script src="/szseWeb/common/script/jquery-1.11.3.min.js">
+     </script>
+     <!--header #end-->
+     <div class="content m_height">
+      <script src="/szseWeb/common/script/typeahead.js" type="text/javascript">
+      </script>
+      <div class="leftlist inside">
+       <div class="all_lbt">
+        市场数据
+       </div>
+       <div class="l_nav" style="clear:both;">
+        <!--第一层 begin-->
+        <div class="x_menu">
+         <!--第一层大标题 begin-->
+         <ul class="type01">
+          <li class="f12" onclick="expandFirstItem('root01')" style="cursor:pointer">
+           <b class="tab_fl">
+            交易品种
+           </b>
+           <img height="12" id="image_root01" rootid="marketdata" src="http://www.szse.cn/main/template/16/images/j1.gif" width="12">
+           </img>
+          </li>
+         </ul>
+         <div class="menu_box" id="root01" parentid="image_root01" style="">
+          <!--第一小层 begin-->
+          <div class="nr">
+           <!--法律层 begin-->
+           <ul class="two_menu">
+            <li>
+             <a href="/main/marketdata/jypz/colist/" id="marketdatajypzcolist" parentid="root01" style="color: rgb(235, 97, 0); ">
+              股票
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/jypz/fundlist1/" id="marketdatajypzfundlist1" parentid="root01">
+              基金
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/jypz/zqlb/" id="marketdatajypzzqlb" parentid="root01">
+              债券
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/jypz/kzz/" id="marketdatajypzkzz" parentid="root01">
+              可转换债券
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/jypz/qzlb/" id="marketdatajypzqzlb" parentid="root01">
+              权证
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/jypz/etflb/" id="marketdatajypzetflb" parentid="root01">
+              ETF
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/jypz/yxg/" id="marketdatajypzyxg" parentid="root01">
+              优先股
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/jypz/ztzzssgs/" id="marketdatajypzztzzssgs" parentid="root01">
+              暂停/终止上市公司
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/jypz/ssgsgmxx/" id="marketdatajypzssgsgmxx" parentid="root01">
+              上市公司更名信息
+             </a>
+            </li>
+           </ul>
+           <!--法律层end -->
+          </div>
+         </div>
+        </div>
+        <div class="x_menu">
+         <!--第一层大标题 begin-->
+         <ul class="type01">
+          <li class="f12" onclick="expandFirstItem('root02')" style="cursor:pointer">
+           <b class="tab_fl">
+            行情与指数
+           </b>
+           <img height="12" id="image_root02" rootid="marketdata" src="/main/template/31/images/jia1.gif" width="12">
+           </img>
+          </li>
+         </ul>
+         <div class="menu_box" id="root02" parentid="image_root02" style="display:none;">
+          <!--第一小层 begin-->
+          <div class="nr">
+           <!--法律层 begin-->
+           <ul class="two_menu">
+            <!--<li><a href="/main/marketdata/hqcx/hqlb/" parentid="root02" id="marketdatahqcxhqlb">证券行情</a></li>-->
+            <li>
+             <a href="/main/marketdata/hqcx/hqlb/" id="marketdatahqcxhqlb" name="otherurls" parentid="root02" urls="main/marketdata/hqcx/hqlb/;main/marketdata/hqcx/zqhq_history/">
+              证券行情
+             </a>
+            </li>
+            <!--<li><a href="/main/marketdata/hqcx/xshqlb/" parentid="root02" id="marketdatahqcxxshqlb">指数行情</a></li>-->
+            <li>
+             <a href="/main/marketdata/hqcx/xshqlb/" id="marketdatahqcxxshqlb" name="otherurls" parentid="root02" urls="main/marketdata/hqcx/xshqlb/;main/marketdata/hqcx/zshq_history/">
+              指数行情
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/hqcx/zsybg/" id="marketdatahqcxzsybg" parentid="root02">
+              指数与样本股
+             </a>
+            </li>
+            <li>
+             <a href="http://www.cnindex.com.cn/">
+              巨潮指数系列
+             </a>
+            </li>
+            <li>
+             <a href="http://www.csindex.com.cn/">
+              中证指数系列
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="x_menu">
+         <!--第一层大标题 begin-->
+         <ul class="type01">
+          <li class="f12" onclick="expandFirstItem('root03')" style="cursor:pointer">
+           <b class="tab_fl">
+            交易统计
+           </b>
+           <img height="12" id="image_root03" rootid="marketdata" src="/main/template/31/images/jia1.gif" width="12">
+           </img>
+          </li>
+         </ul>
+         <!--第一层大标题 end-->
+         <!--第一层包含的内容 begin-->
+         <div class="menu_box" id="root03" parentid="image_root03" style="display:none;">
+          <div class="nr">
+           <ul class="two_menu">
+            <li>
+             <a href="/main/marketdata/tjsj/jbzb/" id="marketdatatjsjjbzb" parentid="root03">
+              基本指标
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/tjsj/jyjg/" id="marketdatatjsjjyjg" parentid="root03">
+              成交概况
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/tjsj/hyzq/" id="marketdatatjsjhyzq" parentid="root03">
+              活跃证券
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/tjsj/jypm/" id="marketdatatjsjjypm" parentid="root03">
+              交易排序
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/tjsj/hysyl/" id="marketdatatjsjhysyl" parentid="root03">
+              行业市盈率
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="x_menu">
+         <!--第一层大标题 begin-->
+         <ul class="type01">
+          <li class="f12" style="cursor:pointer">
+           <b>
+            <a href="/main/marketdata/zttj_front/" id="mainmarketdatazttj_front" rootid="marketdata">
+             专题统计
+            </a>
+           </b>
+          </li>
+         </ul>
+        </div>
+        <div class="x_menu">
+         <!--第一层大标题 begin-->
+         <ul class="type01" style="height:32px; overflow:hidden;">
+          <li class="f12" onclick="expandFirstItem('root04')" style="cursor:pointer">
+           <b class="tab_fl">
+            电子出版物
+           </b>
+           <img height="12" id="image_root04" rootid="marketdata" src="/main/template/31/images/jia1.gif" width="12">
+           </img>
+          </li>
+         </ul>
+         <div class="menu_box" id="root04" parentid="image_root04" style="display:none;">
+          <div class="nr">
+           <ul class="two_menu">
+            <li>
+             <a href="/main/marketdata/tjyb_front/" id="mainmarketdatatjyb_front" parentid="root04">
+              统计月报
+             </a>
+            </li>
+            <li>
+             <a href="/main/marketdata/wbw/marketstat/" id="marketdatawbwmarketstat" parentid="root04">
+              统计年鉴
+             </a>
+            </li>
+           </ul>
+           <!--法律层end -->
+          </div>
+          <!--第一小层 end-->
+         </div>
+         <!--第一层包含的内容 end-->
+        </div>
+       </div>
+       <p>
+        <img src="/main/template/31/images/blue_bk.gif"/>
+       </p>
+       <p class="left_img">
+       </p>
+       <table align="right" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td>
+           <div class="side_link">
+            <a href="/main/marketdata/tjsj/jbzb/">
+             <img border="0" src="/main/images/2011/10/31/20111031160036392.gif"/>
+            </a>
+            <br>
+             <a href="/main/marketdata/hqcx/zsybg/">
+              <img border="0" src="/main/images/2011/10/31/20111031160111465.gif"/>
+             </a>
+            </br>
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <p>
+       </p>
+       <p>
+       </p>
+      </div>
+      <div class="index" style="_clear:both; display:inline; _margin-left:14px;">
+       <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+             <tr>
+              <td>
+               <link href="/szseWeb/common/css/table.css?v=3" rel="stylesheet" type="text/css">
+                <link href="/szseWeb/common/css/table_main.css?v=3" rel="stylesheet" type="text/css">
+                 <link href="/szseWeb/common/datepicker/calendar/calendar.css?v=3" rel="stylesheet" type="text/css">
+                  <link href="/szseWeb/common/css/typeahead.css?v=3" rel="stylesheet" type="text/css">
+                   <script language="javascript" src="/szseWeb/common/script/table.js?v=3">
+                   </script>
+                   <script language="javascript" src="/szseWeb/common/script/ajax.js?v=3">
+                   </script>
+                   <script language="javascript" src="/szseWeb/common/datepicker/calendar/calendar.js?v=3">
+                   </script>
+                   <script language="javascript" src="/szseWeb/common/script/typeahead.js?v=3">
+                   </script>
+                   <script language="javascript" src="/szseWeb/js-report/report-report_scsj_xml.js?v=3">
+                   </script>
+                   <span id="REPORT_ID">
+                    <span id="REPORT_ID_1110">
+                     <table align="center" cellspacing="1" width="100%">
+                      <tbody>
+                       <tr>
+                        <td align="left">
+                         <table class="cls-search-table-common cls-search-table" width="100%">
+                          <tbody>
+                           <tr>
+                            <td align="left" background="/szseWeb/common/images/search05.gif" valign="top" width="6">
+                             <img height="6" src="/szseWeb/common/images/search01.gif" width="6"/>
+                            </td>
+                            <td rowspan="3">
+                             <table border="0">
+                              <tbody>
+                               <tr>
+                                <td width="2">
+                                </td>
+                                <td width="18">
+                                 <div class="cls_search_class1">
+                                 </div>
+                                </td>
+                                <td>
+                                 <span class="cls_search_class2">
+                                  信息查询
+                                 </span>
+                                </td>
+                                <td width="1">
+                                </td>
+                                <td width="5">
+                                 <div class="cls_search_class3">
+                                 </div>
+                                </td>
+                                <td align="left">
+                                 <span style="margin-left:5px;">
+                                 </span>
+                                 <input class="cls-textbox" id="1110_gid_tab2_con_txtDMorJC" name="txtDMorJC" onfocus="this.select();if(!this.obj) this.obj=initTypeAhead(this,{type:'codename',datatype:'ZA%7C%7CEB%7C%7CCY',submitBtnId:'1110_tab2_btn'});" onkeypress="doReportInputboxClick(event,'1110','tab2')" title="公司代码或简称" type="text" value="公司代码或简称">
+                                  <span style="margin-left:5px;">
+                                  </span>
+                                  <select class="cls-selectbox" id="1110_gid_tab2_con_selectHylb" name="selectHylb" onkeypress="doReportInputboxClick(event,'1110','tab2')" title="行业类别">
+                                   <option selected="" value="">
+                                    全部行业类别
+                                   </option>
+                                   <option value="A">
+                                    A 农林牧渔
+                                   </option>
+                                   <option value="B">
+                                    B 采矿业
+                                   </option>
+                                   <option value="C">
+                                    C 制造业
+                                   </option>
+                                   <option value="D">
+                                    D 水电煤气
+                                   </option>
+                                   <option value="E">
+                                    E 建筑业
+                                   </option>
+                                   <option value="F">
+                                    F 批发零售
+                                   </option>
+                                   <option value="G">
+                                    G 运输仓储
+                                   </option>
+                                   <option value="H">
+                                    H 住宿餐饮
+                                   </option>
+                                   <option value="I">
+                                    I 信息技术
+                                   </option>
+                                   <option value="J">
+                                    J 金融业
+                                   </option>
+                                   <option value="K">
+                                    K 房地产
+                                   </option>
+                                   <option value="L">
+                                    L 商务服务
+                                   </option>
+                                   <option value="M">
+                                    M 科研服务
+                                   </option>
+                                   <option value="N">
+                                    N 公共环保
+                                   </option>
+                                   <option value="O">
+                                    O 居民服务
+                                   </option>
+                                   <option value="P">
+                                    P 教育
+                                   </option>
+                                   <option value="Q">
+                                    Q 卫生
+                                   </option>
+                                   <option value="R">
+                                    R 文化传播
+                                   </option>
+                                   <option value="S">
+                                    S 综合
+                                   </option>
+                                  </select>
+                                  <span style="margin-left:5px;">
+                                  </span>
+                                  <input class="cls-textbox" id="1110_gid_tab2_con_txtShengorShi" name="txtShengorShi" onfocus="this.select();" onkeypress="doReportInputboxClick(event,'1110','tab2')" title="省市或地市名称" type="text" value="省市或地市名称">
+                                   <input name="txtIgnore" style="display:none" type="text">
+                                    <span style="margin-left:10px;">
+                                     <input class="cls_search_button" id="1110_tab2_btn" onclick="submit1110tab2()" type="button" value=""/>
+                                    </span>
+                                   </input>
+                                  </input>
+                                 </input>
+                                </td>
+                               </tr>
+                              </tbody>
+                             </table>
+                            </td>
+                            <td align="right" background="/szseWeb/common/images/search06.gif" valign="top" width="6">
+                             <img height="6" src="/szseWeb/common/images/search03.gif" width="6"/>
+                            </td>
+                           </tr>
+                           <tr>
+                            <td background="/szseWeb/common/images/search05.gif">
+                            </td>
+                            <td background="/szseWeb/common/images/search06.gif">
+                            </td>
+                           </tr>
+                           <tr>
+                            <td align="left" background="/szseWeb/common/images/search05.gif" valign="bottom" width="6">
+                             <img height="6" src="/szseWeb/common/images/search02.gif" width="6"/>
+                            </td>
+                            <td align="right" background="/szseWeb/common/images/search06.gif" valign="bottom" width="6">
+                             <img height="6" src="/szseWeb/common/images/search04.gif" width="6"/>
+                            </td>
+                           </tr>
+                          </tbody>
+                         </table>
+                         <table border="0" class="cls-table-header-common cls-table-header" width="100%">
+                          <tbody>
+                           <tr>
+                            <td align="left" width="100%">
+                             <table>
+                              <tbody>
+                               <tr>
+                                <td class="link1">
+                                 (点击
+                                 <u>
+                                  代码
+                                 </u>
+                                 查询当前行情，点击
+                                 <u>
+                                  简称
+                                 </u>
+                                 查询公告，点击
+                                 <img align="absbottom" height="14" src="/common/images/xxzl.gif" style="margin-bottom:2px;" width="14">
+                                  查看详细信息)
+                                 </img>
+                                </td>
+                               </tr>
+                              </tbody>
+                             </table>
+                            </td>
+                           </tr>
+                          </tbody>
+                         </table>
+                         <table bgcolor="#ffffff" class="cls-title-table-common cls-title-table" width="100%">
+                          <tbody>
+                           <tr>
+                            <td align="left" class="cls-title-td">
+                             <div class="cls-title-deselected" onclick="switchTabItem('1110','tab1')" style="text-align:center;display:inline;width:80px;">
+                              上市公司列表
+                             </div>
+                             <div class="cls-title-selected" style="text-align:center;display:inline;width:80px;">
+                              A股列表
+                             </div>
+                             <div class="cls-title-deselected" onclick="switchTabItem('1110','tab3')" style="text-align:center;display:inline;width:80px;">
+                              B股列表
+                             </div>
+                             <div class="cls-title-deselected" onclick="switchTabItem('1110','tab4')" style="text-align:center;display:inline;width:80px;">
+                              A＋B股列表
+                             </div>
+                             <div class="cls-title-deselected" onclick="switchTabItem('1110','tab5')" style="text-align:center;display:inline;width:80px;">
+                              中小企业板
+                             </div>
+                             <div class="cls-title-deselected" onclick="switchTabItem('1110','tab6')" style="text-align:center;display:inline;width:80px;">
+                              创业板
+                             </div>
+                             <span class="cls-subtitle">
+                              2017-01-10
+                             </span>
+                             <span id="MESSAGE_ID">
+                             </span>
+                            </td>
+                            <td>
+                            </td>
+                            <td align="right" valign="bottom" width="60px">
+                             <a href="/szseWeb/ShowReport.szse?SHOWTYPE=xlsx&amp;CATALOGID=1110&amp;tab2PAGENUM=187&amp;tab2PAGECOUNT=187&amp;tab2RECORDCOUNT=1866&amp;ENCODE=1&amp;TABKEY=tab2">
+                              下载
+                              <img 0'="" src="/szseWeb/common/images/excel.gif" style="VERTICAL-ALIGN: middle; padding-bottom:5px; border="/>
+                             </a>
+                            </td>
+                           </tr>
+                          </tbody>
+                         </table>
+                         <table bgcolor="#E0E0E0" border="0" cellspacing="1" class="cls-data-table-common cls-data-table" id="REPORTID_tab2" width="100%">
+                          <tbody>
+                           <tr>
+                            <th bgcolor="#cde1fe">
+                             公司代码
+                            </th>
+                            <th bgcolor="#cde1fe">
+                             公司简称
+                            </th>
+                            <th bgcolor="#cde1fe">
+                             A股代码
+                            </th>
+                            <th bgcolor="#cde1fe">
+                             A股简称
+                            </th>
+                            <th bgcolor="#cde1fe">
+                             A股上市日期
+                            </th>
+                            <th bgcolor="#cde1fe">
+                             A股总股本
+                            </th>
+                            <th bgcolor="#cde1fe">
+                             A股流通股本
+                            </th>
+                            <th bgcolor="#cde1fe">
+                             所属行业
+                            </th>
+                           </tr>
+                           <tr bgcolor="#ffffff">
+                            <td align="center">
+                             <a href="/main/marketdata/hqcx/hqlb/index.shtml?code=300583">
+                              <u>
+                               300583
+                              </u>
+                             </a>
+                            </td>
+                            <td align="center">
+                             <a href="http://disclosure.szse.cn/m/drgg_search.htm?secode=300583">
+                              <u>
+                               赛托生物
+                              </u>
+                             </a>
+                             <img align="absmiddle" onclick="refreshData('/szseWeb/FrontController.szse?ACTIONID=7&amp;%SOURCEURL%&amp;SOURCECATALOGID=1110&amp;CATALOGID=1743_detail_sme&amp;TABKEY=tab1&amp;DM=300583&amp;site=main')" onmouseout="this.style.cursor=''" onmouseover="this.style.cursor='pointer'" src="/szseWeb/common/images/xxzl.gif" title="点击查看详细资料"/>
+                            </td>
+                            <td align="center">
+                             300583
+                            </td>
+                            <td align="center">
+                             赛托生物
+                            </td>
+                            <td align="center">
+                             2017-01-06
+                            </td>
+                            <td align="center">
+                             106,666,667
+                            </td>
+                            <td align="center">
+                             26,666,667
+                            </td>
+                            <td align="left">
+                             C 制造业
+                            </td>
+                           </tr>
+                           <tr bgcolor="#F8F8F8">
+                            <td align="center">
+                             <a href="/main/marketdata/hqcx/hqlb/index.shtml?code=300585">
+                              <u>
+                               300585
+                              </u>
+                             </a>
+                            </td>
+                            <td align="center">
+                             <a href="http://disclosure.szse.cn/m/drgg_search.htm?secode=300585">
+                              <u>
+                               奥联电子
+                              </u>
+                             </a>
+                             <img align="absmiddle" onclick="refreshData('/szseWeb/FrontController.szse?ACTIONID=7&amp;%SOURCEURL%&amp;SOURCECATALOGID=1110&amp;CATALOGID=1743_detail_sme&amp;TABKEY=tab1&amp;DM=300585&amp;site=main')" onmouseout="this.style.cursor=''" onmouseover="this.style.cursor='pointer'" src="/szseWeb/common/images/xxzl.gif" title="点击查看详细资料"/>
+                            </td>
+                            <td align="center">
+                             300585
+                            </td>
+                            <td align="center">
+                             奥联电子
+                            </td>
+                            <td align="center">
+                             2016-12-29
+                            </td>
+                            <td align="center">
+                             80,000,000
+                            </td>
+                            <td align="center">
+                             20,000,000
+                            </td>
+                            <td align="left">
+                             C 制造业
+                            </td>
+                           </tr>
+                           <tr bgcolor="#ffffff">
+                            <td align="center">
+                             <a href="/main/marketdata/hqcx/hqlb/index.shtml?code=300586">
+                              <u>
+                               300586
+                              </u>
+                             </a>
+                            </td>
+                            <td align="center">
+                             <a href="http://disclosure.szse.cn/m/drgg_search.htm?secode=300586">
+                              <u>
+                               美联新材
+                              </u>
+                             </a>
+                             <img align="absmiddle" onclick="refreshData('/szseWeb/FrontController.szse?ACTIONID=7&amp;%SOURCEURL%&amp;SOURCECATALOGID=1110&amp;CATALOGID=1743_detail_sme&amp;TABKEY=tab1&amp;DM=300586&amp;site=main')" onmouseout="this.style.cursor=''" onmouseover="this.style.cursor='pointer'" src="/szseWeb/common/images/xxzl.gif" title="点击查看详细资料"/>
+                            </td>
+                            <td align="center">
+                             300586
+                            </td>
+                            <td align="center">
+                             美联新材
+                            </td>
+                            <td align="center">
+                             2017-01-04
+                            </td>
+                            <td align="center">
+                             96,000,000
+                            </td>
+                            <td align="center">
+                             24,000,000
+                            </td>
+                            <td align="left">
+                             C 制造业
+                            </td>
+                           </tr>
+                           <tr bgcolor="#F8F8F8">
+                            <td align="center">
+                             <a href="/main/marketdata/hqcx/hqlb/index.shtml?code=300587">
+                              <u>
+                               300587
+                              </u>
+                             </a>
+                            </td>
+                            <td align="center">
+                             <a href="http://disclosure.szse.cn/m/drgg_search.htm?secode=300587">
+                              <u>
+                               天铁股份
+                              </u>
+                             </a>
+                             <img align="absmiddle" onclick="refreshData('/szseWeb/FrontController.szse?ACTIONID=7&amp;%SOURCEURL%&amp;SOURCECATALOGID=1110&amp;CATALOGID=1743_detail_sme&amp;TABKEY=tab1&amp;DM=300587&amp;site=main')" onmouseout="this.style.cursor=''" onmouseover="this.style.cursor='pointer'" src="/szseWeb/common/images/xxzl.gif" title="点击查看详细资料"/>
+                            </td>
+                            <td align="center">
+                             300587
+                            </td>
+                            <td align="center">
+                             天铁股份
+                            </td>
+                            <td align="center">
+                             2017-01-05
+                            </td>
+                            <td align="center">
+                             104,000,000
+                            </td>
+                            <td align="center">
+                             26,000,000
+                            </td>
+                            <td align="left">
+                             C 制造业
+                            </td>
+                           </tr>
+                           <tr bgcolor="#ffffff">
+                            <td align="center">
+                             <a href="/main/marketdata/hqcx/hqlb/index.shtml?code=300588">
+                              <u>
+                               300588
+                              </u>
+                             </a>
+                            </td>
+                            <td align="center">
+                             <a href="http://disclosure.szse.cn/m/drgg_search.htm?secode=300588">
+                              <u>
+                               熙菱信息
+                              </u>
+                             </a>
+                             <img align="absmiddle" onclick="refreshData('/szseWeb/FrontController.szse?ACTIONID=7&amp;%SOURCEURL%&amp;SOURCECATALOGID=1110&amp;CATALOGID=1743_detail_sme&amp;TABKEY=tab1&amp;DM=300588&amp;site=main')" onmouseout="this.style.cursor=''" onmouseover="this.style.cursor='pointer'" src="/szseWeb/common/images/xxzl.gif" title="点击查看详细资料"/>
+                            </td>
+                            <td align="center">
+                             300588
+                            </td>
+                            <td align="center">
+                             熙菱信息
+                            </td>
+                            <td align="center">
+                             2017-01-05
+                            </td>
+                            <td align="center">
+                             100,000,000
+                            </td>
+                            <td align="center">
+                             25,000,000
+                            </td>
+                            <td align="left">
+                             I 信息技术
+                            </td>
+                           </tr>
+                           <tr bgcolor="#F8F8F8">
+                            <td align="center">
+                             <a href="/main/marketdata/hqcx/hqlb/index.shtml?code=300591">
+                              <u>
+                               300591
+                              </u>
+                             </a>
+                            </td>
+                            <td align="center">
+                             <a href="http://disclosure.szse.cn/m/drgg_search.htm?secode=300591">
+                              <u>
+                               万里马
+                              </u>
+                             </a>
+                             <img align="absmiddle" onclick="refreshData('/szseWeb/FrontController.szse?ACTIONID=7&amp;%SOURCEURL%&amp;SOURCECATALOGID=1110&amp;CATALOGID=1743_detail_sme&amp;TABKEY=tab1&amp;DM=300591&amp;site=main')" onmouseout="this.style.cursor=''" onmouseover="this.style.cursor='pointer'" src="/szseWeb/common/images/xxzl.gif" title="点击查看详细资料"/>
+                            </td>
+                            <td align="center">
+                             300591
+                            </td>
+                            <td align="center">
+                             N万里马
+                            </td>
+                            <td align="center">
+                             2017-01-10
+                            </td>
+                            <td align="center">
+                             240,000,000
+                            </td>
+                            <td align="center">
+                             60,000,000
+                            </td>
+                            <td align="left">
+                             C 制造业
+                            </td>
+                           </tr>
+                          </tbody>
+                         </table>
+                         <table border="0" style="margin-top:11px;" width="100%">
+                          <tbody>
+                           <tr>
+                            <td align="left" width="128px">
+                             当前第187页  共187页
+                            </td>
+                            <td>
+                            </td>
+                            <td align="right" width="275px">
+                             <input "="" class="cls-navigate-prev" name="navigatebutton" onclick="gotoReportPageNo('1110','tab2',186,187,1866)" type="button" value="">
+                              <input class="cls-navigate-next" name="navigatebutton" onclick="" type="button" value="">
+                               <input class="cls-textbox" id="1110_tab2_naviboxid" maxlength="10" onfocus="this.select();" onkeydown="return doNavigateInputboxKeyDown(event,'1110_tab2_goid');" style="width:38px" type="text" value="187">
+                                页
+                                <input class="cls-navigate-go" id="1110_tab2_goid" name="navigatebutton" onclick="gotoReportPageNoByTextBox('1110','tab2','1110_tab2_naviboxid',187,1866)" type="button" value=""/>
+                               </input>
+                              </input>
+                             </input>
+                            </td>
+                           </tr>
+                          </tbody>
+                         </table>
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                     <span catalogid="1110" id="szseWebReport_pageinfo_1110" report_action="navigate" style="display:none" tabkeys="tab2;" url="/szseWeb/FrontController.szse?ACTIONID=7&amp;AJAX=AJAX-TRUE&amp;CATALOGID=1110&amp;TABKEY=tab2&amp;tab2PAGENUM=187&amp;tab2PAGECOUNT=187&amp;tab2RECORDCOUNT=1866">
+                     </span>
+                    </span>
+                   </span>
+                  </link>
+                 </link>
+                </link>
+               </link>
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+     <div class="footer">
+      <div class="f_auto">
+       <div class="small_menu">
+        <a href="/main/aboutus/flsm/index.shtml">
+         法律声明
+        </a>
+        <span>
+         |
+        </span>
+        <a href="/main/aboutus/lxwm/index.shtml">
+         联系我们
+        </a>
+        <br>
+         <a href="/main/aboutus/wzdt/index.shtml">
+          网站地图
+         </a>
+         <span>
+          |
+         </span>
+         <a href="/main/aboutus/jyrl/">
+          交易日历
+         </a>
+        </br>
+       </div>
+       <span>
+        深圳证券交易所 版权所有 ©
+        <samp>
+         2013 Shenzhen Stock Exchange. All Rights Reserved
+        </samp>
+       </span>
+       <br>
+        [
+        <a class="bs" href="http://www.miitbeian.gov.cn">
+         粤ICP备05012689号
+        </a>
+        (建议使用IE6.0以上浏览器，1024x768以上分辨率)]
+        <span class="pl">
+         <a href="http://www.sznet110.gov.cn/netalarm/index.jsp">
+          <img border="0" height="32" src="/main/template/283/images/wa02.gif" style="vertical-align:middle" width="27"/>
+         </a>
+         <a href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403201010119">
+          <img border="0" height="32" src="/main/template/283/images/wa01.gif" style="vertical-align:middle" width="27"/>
+         </a>
+        </span>
+       </br>
+      </div>
+     </div>
+     <script src="/szseWeb/common/script/main_treeMenu.js" type="text/javascript">
+     </script>
+     <script src="/szseWeb/common/script/treeMenu.js" type="text/javascript">
+     </script>
+     <script event="onload" for="window" type="text/javascript">
+      <!--
+	try{
+		selectMenuItem();
+	}catch(e){}
+	try{
+		init();
+	}catch(e){}
+//-->
+     </script>
+    </link>
+   </link>
+  </div>
+ </body>
+</html>
