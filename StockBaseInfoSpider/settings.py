@@ -53,7 +53,7 @@ ROBOTSTXT_OBEY = True
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'StockBaseInfoSpider.DownloadWebkitMiddleware.DownloadWebkitMiddleware': 543,
+#    'StockBaseInfoSpider.StockDownloadMiddleware': 543,
 # }
 # import os
 # os.environ["DISPLAY"] = ":0"
@@ -90,3 +90,6 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+#add
+COMMANDS_MODULE = 'StockBaseInfoSpider.commands'

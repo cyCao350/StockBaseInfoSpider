@@ -55,7 +55,7 @@ class DbService(object):
                              , item['announcementUrl'])
             self.cursor.execute(sql)
 
-            print '---> insert ', item['securityCode'], item['exchange'], item['securityName'], 'success'
+            # print '---> insert ', item['securityCode'], item['exchange'], item['securityName'], 'success'
         else:
             print '---> error:item is None, do not insert!'
 

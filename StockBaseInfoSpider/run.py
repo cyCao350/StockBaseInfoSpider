@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 from scrapy import cmdline
-cmdline.execute('scrapy crawl StockBaseInfoSpider'.split())
+cmdline.execute('scrapy crawlall'.split())
